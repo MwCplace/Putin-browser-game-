@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<title>Ролевая с Путиным</title>
+</head>
+
+<body>
+<div id="container">
+
+<!-- П О М О Щ Ь -->
+  <div class="dropdown"> 
+    <button class="dropbtn">Помощь</button>
+    <div class="dropdown-content">
+      <a onclick="alert('Подсказок пока нет')">Подсказка</a>
+      <a onclick="alert('Нажимай на вариант ответа (розовая кнопка) и смотри что будет')">Правила</a>
+      <a onclick="showStartFrame()">Меню</a>
+    </div>
+  </div>
+<!-- М Е Н Ю -->
+  <div id="starting-screen">
+    <h1>Уважаемые граждане!</h1>
+    <div class="btn-container">
+      <button id="button1" class="btn-small" onclick="gameStart()">Начать игру</button>
+    </div>
+  </div>
+<!-- К А Д Р Ы -->
+<div >
+  <div id="frame1" class="frame">
+    <h1>Вы оказались во дворце Путина...</h1>
+    <p>Кажется, вы слышите его шаги, он направляется к вам.</br>Ваши действия?</p>
+    <div class="btn-container">
+      <button id="option_btn1" onclick="playOption1()">Спрятаться за штору</button>
+      <button id="option_btn2" onclick="playOption2()">Притвориться статуей</button>
+      <button id="option_btn3" onclick="playOption3()">Побежать к Путину</button>
+    </div>
+  </div>
+
+  <div id="option_frame-1" class="frame">
+    <h1>ГУД ЭНДИНГ</h1>
+    <p>Тебя никто не заметил. После, вы успешно сбежали из дворца</br>Ещё раз?</p>
+  </div>
+
+  <div id="option_frame-2" class="frame">
+    <h1>GAME OVER</h1>
+    <p>Ты еблан?</p>
+  </div>
+
+  <div id="option_frame-3" class="frame">
+    <h1>Путин очень удивился вам...</h1>
+    <p>Но, кажется, он вас ждал. Он пригласил вас в ресторан.</p>
+    <div class="btn-container">
+        <button class="option_btn1" onclick="playOption4()">Согласиться</button>
+        <button class="option_btn2" onclick="playOption5()">Отказать</button>
+        <button class="option_btn3" onclick="playOption6()">Начать орать о помощи</button>
+      </div>
+  </div>
+
+  <div id="option_frame-4" class="frame">
+    <h1>ГУД ЭНДИНГ</h1>
+    <p>Он провел вас на выход из дворца, где уже ждала Rolls-Royce Boat Tail за 28млн долларов с личным водителем по имени
+	Доминик Торетто. Вы поехали в самый дорогой ресторан России, а потом Путин сделал Вам предложение и Вы жили долго и
+	счастливо.</p>
+  </div>
+
+  <div id="option_frame-5" class="frame">
+    <h1>Бля ты лошня, такого мужчину упустила</h1>
+    <p>Путин расстроился.. Но не стал препятсовать вашему выбору, поэтому вывел вас из дворца и показал в какой стороне находится автобусная остановка дав пару рублей на проезд.</p>
+  </div>
+
+  <div id="option_frame-6" class="frame">
+    <h1>ГАМЕ ОВЕР.............</h1>
+    <p>"БЛЯ ТЫ ЧО ОРЕШЬ НЕНОРМАЛЬНАЯ!!1!1". Путин попылся закрыть вам рот руками, но случайно придушил вас. Вы УМЕРЛИ.</p>
+  </div>
+    
+</div>
+</body>
+
+</html>
