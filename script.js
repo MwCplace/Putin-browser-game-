@@ -6,13 +6,16 @@ var buttonStyle = {
   fontWeight: '700'
 };
 
+var btn1 = document.getElementById('option_btn1');
+var btn2 = document.getElementById('option_btn2');
+var btn3 = document.getElementById('option_btn3');
+var btn4 = document.getElementById('option_btn4');
+var btn5 = document.getElementById('option_btn5');
+var btn6 = document.getElementById('option_btn6');
+
 function hideFrameById(frameName) {
   var frame = document.getElementById(frameName);
-  if (frame == null) {
-    console.log(frameName);
-  }
   frame.style.display = 'none';
-  
 }
 
 function hideFrameByClass(frameName) {
@@ -32,13 +35,21 @@ function colorChosenELement(element) {
   element.style.color = 'black';
 }
 
-
-
-
+function uncolorChosenELement(element) {
+  if (element != null) {
+    element.style.background = 'deepPink';
+    element.style.color = 'beige';
+  }
+}
 
 function playOption1() {
-  // var option = document.getElementsByClassName('option_btn1')[1];
-  // colorChosenELement(option);
+  // colorChosenELement(btn1);
+  // uncolorChosenELement(btn2);
+  // uncolorChosenELement(btn3);
+  // uncolorChosenELement(btn4);
+  // uncolorChosenELement(btn5);
+  // uncolorChosenELement(btn6);
+
   var frame = document.getElementById('option_frame-1');
   frame.style.display = 'block';
   hideFrameById('option_frame-2');
@@ -49,8 +60,13 @@ function playOption1() {
 }
 
 function playOption2() {
-  // var option = document.getElementsByClassName('option_btn1')[1];
-  // colorChosenELement(option);
+  // uncolorChosenELement(btn1);
+  // colorChosenELement(btn2);
+  // uncolorChosenELement(btn3);
+  // uncolorChosenELement(btn4);
+  // uncolorChosenELement(btn5);
+  // uncolorChosenELement(btn6);
+
   var frame = document.getElementById('option_frame-2');
   frame.style.display = 'block';
   hideFrameById('option_frame-1');
@@ -61,8 +77,13 @@ function playOption2() {
 }
 
 function playOption3() {
-  // var option = document.getElementsByClassName('option_btn1')[1];
-  // colorChosenELement(option);
+  // uncolorChosenELement(btn1);
+  // uncolorChosenELement(btn2);
+  // colorChosenELement(btn3);
+  // uncolorChosenELement(btn4);
+  // uncolorChosenELement(btn5);
+  // uncolorChosenELement(btn6);
+
   var frame = document.getElementById('option_frame-3');
   frame.style.display = 'block';
   hideFrameById('option_frame-1');
@@ -73,8 +94,10 @@ function playOption3() {
 }
 
 function playOption4() {
-  // var option = document.getElementsByClassName('option_btn1')[1];
-  // colorChosenELement(option);
+  // colorChosenELement(btn4);
+  // uncolorChosenELement(btn5);
+  // uncolorChosenELement(btn6);
+
   var frame = document.getElementById('option_frame-4');
   frame.style.display = 'block';
   hideFrameById('option_frame-5');
@@ -82,8 +105,10 @@ function playOption4() {
 }
 
 function playOption5() {
-  // var option = document.getElementsByClassName('option_btn1')[1];
-  // colorChosenELement(option);
+  // uncolorChosenELement(btn4);
+  // colorChosenELement(btn5);
+  // uncolorChosenELement(btn6);
+
   var frame = document.getElementById('option_frame-5');
   frame.style.display = 'block';
   hideFrameById('option_frame-4');
@@ -91,17 +116,15 @@ function playOption5() {
 }
 
 function playOption6() {
-  // var option = document.getElementsByClassName('option_btn1')[1];
-  // colorChosenELement(option);
+  // uncolorChosenELement(btn4);
+  // uncolorChosenELement(btn5);
+  // colorChosenELement(btn6);
+
   var frame = document.getElementById('option_frame-6');
   frame.style.display = 'block';
   hideFrameById('option_frame-4');
   hideFrameById('option_frame-5');
 }
-
-// function showMoreGames() {
-//   showFrame('more-games-frame');
-// }
 
 function showMenu() {
   var frame = document.getElementById('starting-screen');
